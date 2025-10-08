@@ -1,7 +1,7 @@
 import React from 'react';
 import { Twitter, Linkedin } from 'lucide-react'; 
 import coffin from '../assets/coffin.jpg';
-// import nixl from '../assets/nixl.jpg';
+import nixl from '../assets/nixl.jpg';
 import amjith from '../assets/amjith.png';
 
 //team members
@@ -18,7 +18,7 @@ const teamMembers = [
     name: "Nixl",
     role: "Developer",
     bio: "The tech wizard obsessed with fluid controls, and player feel. Nixl makes sure every movement, jump, and bug (the good kind) hits just right.",
-    avatar: "/assets/jamie-avatar.jpg", 
+    avatar: nixl,
     twitter: "https://twitter.com/",
     linkedin: "https://www.linkedin.com/in/amnihal/",
   },
