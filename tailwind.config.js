@@ -5,9 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-        fontFamily: {
+      fontFamily: {
         sans: ['Inter', 'sans-serif'],        
         display: ['Space Grotesk', 'sans-serif'], 
+      },
+      screens: {
+        'xs': {'max': '380px'},
       },
     },
   },

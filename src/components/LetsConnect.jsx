@@ -2,10 +2,10 @@ import React from 'react';
 import { Twitter, Instagram, Youtube, ArrowRight } from 'lucide-react'; 
 export default function LetsConnect() {
   return (
-    <section className="py-20 bg-gray-900 text-white px-4">
+    <section className="py-20 bg-gray-900 text-white px-4 xs:px-4">
       <div className="container mx-auto max-w-5xl text-center">
 
-        <div className="flex justify-center mb-6 gap-10">
+        <div className="flex justify-center flex-wrap gap-6 xs:gap-4 mb-10 xs:mb-6">
           <a href="https://x.com/ThrigonInter" target="_blank" rel="noopener noreferrer">
             <div className="p-4 inline-flex rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400">
               <Twitter className="w-8 h-8" />
