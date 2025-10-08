@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl">
 <span className="inline-block bg-teal-500/20 text-teal-400 px-6 py-2 rounded-full mb-6 text-base md:text-lg font-display tracking-wide ">
-  Welcome to Thrigon Interactive
+  Welcome to Thrigon Interactives
 </span>
 
 

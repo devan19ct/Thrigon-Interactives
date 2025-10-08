@@ -13,7 +13,7 @@ export default function Footer() {
           <h3 className="text-xl font-extrabold mb-1 
                          // Gradient text matching the Hero section's style
                          bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-            Thrigon Interactive
+            Thrigon Interactives
           </h3>
           <p className="text-gray-400">
             Crafting immersive gaming experiences
@@ -23,7 +23,7 @@ export default function Footer() {
         {/* Right Section: Copyright and Motto */}
         <div className="text-center md:text-right text-gray-400">
           <p className="mb-1">
-            &copy; {currentYear} Thrigon Interactive. All rights reserved.
+            &copy; {currentYear} Thrigon Interactives. All rights reserved.
           </p>
           <p>
             Made with passion and creativity

@@ -32,7 +32,7 @@ export default function About() {
       <div className="container mx-auto max-w-6xl text-center">
         {/* Title and Description */}
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-          About <span className="text-purple-500">Thrigon Interactive</span>
+          About <span className="text-purple-500">Thrigon Interactives</span>
         </h2>
         <p className="text-gray-300 mb-16 max-w-3xl mx-auto text-lg">
           We're a small but passionate team dedicated to creating games that feel like 
