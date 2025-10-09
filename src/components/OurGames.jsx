@@ -1,8 +1,9 @@
 import React from 'react';
 
-import moksh from '../assets/hero-bg.jpg'; 
+import moksh from '../assets/mokshlogo.png'; 
 import YekshiNights from '../assets/hero-bg.jpg';
 import BicycleLife from '../assets/hero-bg.jpg';
+import mokshHover from '../assets/mokshenv.png';
 
 // Data structure for the game cards
 const gamesData = [
@@ -10,6 +11,7 @@ const gamesData = [
     title: "Moksh: The Last Hope",
     description: "Survive as a lab intern in a zombie-infested land inspired by India...",
     image: moksh,
+    hoverImage: mokshHover,
     status: "In Development",
     tags: ["Adventure", "Exploration", "Story-Rich", "Survival"],
     statusColor: "bg-purple-600", 
@@ -36,13 +38,28 @@ const gamesData = [
 
 const GameCard = ({ game }) => (
   <div className="bg-gray-800/50 rounded-xl overflow-hidden shadow-xl hover:shadow-purple-500/20 transition-all duration-300">
+
     {/* Image Container */}
-    <div className="relative h-64">
+    <div className="relative h-64 group">
+
+      {/* Default Image */}
       <img
         src={game.image}
         alt={game.title}
-        className="w-full h-full object-cover"
+        className={`w-full h-full object-cover transition-opacity duration-300 ${
+          game.hoverImage ? "group-hover:opacity-0" : ""
+        }`}
       />
+
+      {/* Hover Image (only if available) */}
+      {game.hoverImage && (
+        <img
+          src={game.hoverImage}
+          alt={`${game.title} hover`}
+          className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        />
+      )}
+
       {/* Status Badge */}
       <span className={`absolute top-4 right-4 text-white text-xs font-semibold px-3 py-1 rounded-full ${game.statusColor}`}>
         {game.status}
