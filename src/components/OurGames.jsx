@@ -8,7 +8,7 @@ import BicycleLife from '../assets/hero-bg.jpg';
 const gamesData = [
   {
     title: "Moksh: The Last Hope",
-    description: "Survive as a lab intern in a zombie-infested land inspired by India, battling hordes, crafting weapons, and racing to save humanity.",
+    description: "Survive as a lab intern in a zombie-infested land inspired by India...",
     image: moksh,
     status: "In Development",
     tags: ["Adventure", "Exploration", "Story-Rich", "Survival"],
@@ -16,7 +16,7 @@ const gamesData = [
   },
   {
     title: "Yekshi Nights",
-    description: "Unravel the dark secrets of a haunted Kerala-inspired tharavadu as a modern priest, confronting ancient rituals, restless spirits, and a vengeful Yakshi bound by a tragic past.",
+    description: "Unravel the dark secrets of a haunted Kerala-inspired tharavadu as a modern priest...",
     image: YekshiNights,
     status: "Coming Soon",
     tags: ["Puzzle", "Horror", "Open-World RPG"],
@@ -24,7 +24,7 @@ const gamesData = [
   },
   {
     title: "Bicycle Life: Oru Cycle Kadha",
-    description: "Race through misty 90s mornings and lively streets as a witty paperboy in this nostalgic, fast-paced cycling adventure.",
+    description: "Race through misty 90s mornings and lively streets as a witty paperboy...",
     image: BicycleLife,
     status: "Concept",
     tags: ["Open-World", "Casual", "Arcade", "Slice of Life"],
