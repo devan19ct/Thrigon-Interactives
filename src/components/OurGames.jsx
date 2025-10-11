@@ -1,9 +1,11 @@
 import React from 'react';
 
 import moksh from '../assets/mokshlogo.png'; 
-import YekshiNights from '../assets/hero-bg.jpg';
-import BicycleLife from '../assets/hero-bg.jpg';
+import YekshiNights from '../assets/Yekshi.png';
+import BicycleLife from '../assets/bycle.png';
+import BicycleLifeHover from '../assets/BycleHover.png';
 import mokshHover from '../assets/mokshenv.png';
+import YekshiHover from '../assets/Yekshihover.png'; 
 
 // Data structure for the game cards
 const gamesData = [
@@ -17,9 +19,10 @@ const gamesData = [
     statusColor: "bg-purple-600", 
   },
   {
-    title: "Yekshi Nights",
+    title: "Yakshi Nights",
     description: "Unravel the dark secrets of a haunted Kerala-inspired tharavadu as a modern priest...",
     image: YekshiNights,
+    hoverImage: YekshiHover,
     status: "Coming Soon",
     tags: ["Puzzle", "Horror", "Open-World RPG"],
     statusColor: "bg-pink-600", 
@@ -28,6 +31,7 @@ const gamesData = [
     title: "Bicycle Life: Oru Cycle Kadha",
     description: "Race through misty 90s mornings and lively streets as a witty paperboy...",
     image: BicycleLife,
+    hoverImage: BicycleLifeHover,
     status: "Concept",
     tags: ["Open-World", "Casual", "Arcade", "Slice of Life"],
     statusColor: "bg-red-600", 
