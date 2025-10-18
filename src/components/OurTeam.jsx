@@ -3,6 +3,7 @@ import { Twitter, Linkedin } from 'lucide-react';
 import coffin from '../assets/coffin.jpg';
 import nixl from '../assets/nixl.jpg';
 import amjith from '../assets/amjith.png';
+// import flyfox from '../assets/';
 
 //team members
 const teamMembers = [
@@ -30,6 +31,14 @@ const teamMembers = [
     twitter: "https://twitter.com/",
     linkedin: "https://www.linkedin.com/in/amjithkshine/",
   },
+  // {
+  //   name: "Fly-Fox",
+  //   role: "3D Artist",
+  //   bio: "Flyfox transforms mood into matter, sculpting the spaces, lights, and tones that define Thrigon’s worlds.",
+  //   avatar: flyfox, 
+  //   twitter: "https://twitter.com/",
+  //   linkedin: "https://www.linkedin.com/in/",
+  // },
 ];
 
 // component for the individual team card

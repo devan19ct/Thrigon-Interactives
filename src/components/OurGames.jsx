@@ -10,31 +10,33 @@ import YekshiHover from '../assets/Yekshihover.png';
 // Data structure for the game cards
 const gamesData = [
   {
+    title: "Bicycle Life: Oru Cycle Kadha",
+    description: "Race through misty 90s mornings and lively streets as a witty paperboy...",
+    image: BicycleLife,
+    hoverImage: BicycleLifeHover,
+    status: "In Development",
+    tags: ["Open-World", "Casual", "Arcade", "Slice of Life"],
+    statusColor: "bg-red-600", 
+  },
+
+  {
     title: "Moksh: The Last Hope",
     description: "Survive as a lab intern in a zombie-infested land inspired by India...",
     image: moksh,
     hoverImage: mokshHover,
-    status: "In Development",
+    status: "Coming Soon",
     tags: ["Adventure", "Exploration", "Story-Rich", "Survival"],
     statusColor: "bg-purple-600", 
   },
+
   {
     title: "Yakshi Nights",
     description: "Unravel the dark secrets of a haunted Kerala-inspired tharavadu as a modern priest...",
     image: YekshiNights,
     hoverImage: YekshiHover,
-    status: "Coming Soon",
+    status: "Concept",
     tags: ["Puzzle", "Horror", "Open-World RPG"],
     statusColor: "bg-pink-600", 
-  },
-  {
-    title: "Bicycle Life: Oru Cycle Kadha",
-    description: "Race through misty 90s mornings and lively streets as a witty paperboy...",
-    image: BicycleLife,
-    hoverImage: BicycleLifeHover,
-    status: "Concept",
-    tags: ["Open-World", "Casual", "Arcade", "Slice of Life"],
-    statusColor: "bg-red-600", 
   },
 ];
 
