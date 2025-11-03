@@ -39,7 +39,7 @@ export default function Hero() {
         </p>
 
         <div className="flex gap-4 justify-center">
-          <button onClick={() => window.open("#", "#")} className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-cyan-500 transition">
+          <button onClick={() => window.open("https://www.youtube.com/@ThrigonInteractives", "YT")} className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-cyan-500 transition">
             Explore Our Games →
           </button>
           <button onClick={() => window.open("https://discord.gg/jZNjJ5mBYM", "discord")} className="border border-purple-500 to-pink-500 px-6 py-3 rounded-md font-semibold hover:bg-purple-500/20 transition">

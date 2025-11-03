@@ -3,12 +3,13 @@ import { Twitter, Linkedin } from 'lucide-react';
 import coffin from '../assets/coffin.jpg';
 import nixl from '../assets/nixl.jpg';
 import amjith from '../assets/amjith.png';
-// import flyfox from '../assets/';
+import flyfox from '../assets/flyfox.jpg';
 
-//team members
+// team members
 const teamMembers = [
   {
-    name: "Coffin",
+    name: "Devan",
+    displayName: "Coffin",
     role: "Developer",
     bio: "The brain behind code and chaos. From gameplay logic to level flow, Coffin builds the core systems that keep our worlds alive and occasionally breaks them just to make them better.",
     avatar: coffin,
@@ -16,7 +17,8 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/-devan-m/",
   },
   {
-    name: "Nixl",
+    name: "Nihal",
+    displayName: "Nixl",
     role: "Developer",
     bio: "The tech wizard obsessed with fluid controls, and player feel. Nixl makes sure every movement, jump, and bug (the good kind) hits just right.",
     avatar: nixl,
@@ -25,64 +27,61 @@ const teamMembers = [
   },
   {
     name: "Amjith",
+    displayName: "JohnnyDan",
     role: "3D Artist",
-    bio: "Turns ideas into tangible worlds. From grungy walls to eerie lighting, Amjith crafts the atmosphere that defines every Thrigon experience.",
+    bio: "Turns ideas into tangible worlds. From grungy walls to eerie lighting, Jhonny crafts the atmosphere that defines every Thrigon experience.",
     avatar: amjith, 
     twitter: "https://twitter.com/",
     linkedin: "https://www.linkedin.com/in/amjithkshine/",
   },
-  // {
-  //   name: "Fly-Fox",
-  //   role: "3D Artist",
-  //   bio: "Flyfox transforms mood into matter, sculpting the spaces, lights, and tones that define Thrigon’s worlds.",
-  //   avatar: flyfox, 
-  //   twitter: "https://twitter.com/",
-  //   linkedin: "https://www.linkedin.com/in/",
-  // },
+  {
+    name: "Anand",
+    displayName: "FlyFox",
+    role: "3D Artist",
+    bio: "Flyfox transforms mood into matter, sculpting the spaces, lights, and tones that define Thrigon’s worlds.",
+    avatar: flyfox, 
+    twitter: "https://twitter.com/",
+    linkedin: "https://www.linkedin.com/in/anand-anil-369aa4209/",
+  },
 ];
 
-// component for the individual team card
+// card component
 const TeamMemberCard = ({ member }) => (
-  <div className="flex flex-col items-center text-center p-6 bg-gray-800/50 rounded-xl shadow-lg transition-all duration-300 hover:shadow-purple-400/20 h-full">
-    
-    {/* Avatar Image (placeholder) */}
+  <div className="group flex flex-col items-center text-center p-6 bg-gray-800/50 rounded-xl shadow-lg transition-all duration-300 hover:shadow-purple-400/20 h-full">
     
     <div className="w-32 h-32 mb-4 rounded-full border-4 border-purple-500/30 overflow-hidden bg-gray-700 flex items-center justify-center">
-      <img 
-        src={member.avatar} 
-        alt={member.name} 
-        className="w-full h-full object-cover"
-      />
+      <img src={member.avatar} alt={member.displayName} className="w-full h-full object-cover" />
     </div>
 
-    <h3 className="text-xl font-bold text-white mb-1">
-      {member.name}
-    </h3>
-    <p className="text-purple-500 font-semibold mb-3">
-      {member.role}
-    </p>
+    {/* Hover name switch */}
+    <div className="relative h-8 mb-1 flex items-center justify-center">
+      <h3 className="absolute text-xl font-bold text-white transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-1 group-hover:scale-95">
+        {member.name}
+      </h3>
+      <h3 className="absolute text-xl font-bold text-purple-400 opacity-0 translate-y-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-105">
+        {member.displayName}
+      </h3>
+    </div>
 
-    <p className="text-gray-400 mb-6 flex-grow">
-      {member.bio}
-    </p>
+    <p className="text-purple-500 font-semibold mb-3">{member.role}</p>
+    <p className="text-gray-400 mb-6 flex-grow">{member.bio}</p>
 
-    {/* Social Links */}
     <div className="flex space-x-4 mt-auto">
       {member.twitter && (
-        <a 
-          href={member.twitter} 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href={member.twitter}
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-gray-500 hover:text-purple-500 transition-colors"
         >
           <Twitter className="w-5 h-5" />
         </a>
       )}
       {member.linkedin && (
-        <a 
-          href={member.linkedin} 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href={member.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-gray-500 hover:text-purple-500 transition-colors"
         >
           <Linkedin className="w-5 h-5" />
@@ -94,9 +93,11 @@ const TeamMemberCard = ({ member }) => (
 
 export default function OurTeam() {
   return (
-    <section className="py-20 bg-gray-900 text-white px-4">
-      <div className="container mx-auto max-w-7xl text-center">
-        {/* Section Header */}
+    <section className="py-20 bg-gray-900 text-white px-4 relative">
+      {/* Fix background micro-gap illusion */}
+      <div className="absolute inset-0 bg-gray-900 pointer-events-none"></div>
+
+      <div className="container mx-auto max-w-7xl text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
           Meet Our <span className="text-purple-500">Team</span>
         </h2>
@@ -104,8 +105,8 @@ export default function OurTeam() {
           We are a small, dedicated group of creators united by a passion for stylish, cozy games and compelling storytelling.
         </p>
 
-        {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Equal height cards fix */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-stretch">
           {teamMembers.map((member, index) => (
             <TeamMemberCard key={index} member={member} />
           ))}
