@@ -5,7 +5,7 @@ import YekshiNights from '../assets/Yekshi.png';
 import BicycleLife from '../assets/bycle.png';
 import BicycleLifeHover from '../assets/BycleHover.png';
 import mokshHover from '../assets/mokshenv.png';
-import YekshiHover from '../assets/Yekshihover.png'; 
+import YekshiHover from '../assets/YekshiHover.png'; 
 
 // Data structure for the game cards
 const gamesData = [
