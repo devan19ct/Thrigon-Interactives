@@ -19,7 +19,7 @@ const teamMembers = [
   {
     name: "Nihal",
     displayName: "Nixl",
-    role: "Developer",
+    role: "Animator",
     bio: "The tech wizard obsessed with fluid controls, and player feel. Nixl makes sure every movement, jump, and bug (the good kind) hits just right.",
     avatar: nixl,
     twitter: "https://twitter.com/",
@@ -29,7 +29,7 @@ const teamMembers = [
     name: "Amjith",
     displayName: "JohnnyDan",
     role: "3D Artist",
-    bio: "Turns ideas into tangible worlds. From grungy walls to eerie lighting, Jhonny crafts the atmosphere that defines every Thrigon experience.",
+    bio: "Turns ideas into tangible worlds. From grungy walls to eerie lighting, Johnny crafts the atmosphere that defines every Thrigon experience.",
     avatar: amjith, 
     twitter: "https://twitter.com/",
     linkedin: "https://www.linkedin.com/in/amjithkshine/",
