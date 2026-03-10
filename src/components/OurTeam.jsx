@@ -4,6 +4,7 @@ import coffin from '../assets/coffin.jpg';
 import nixl from '../assets/nixl.jpg';
 import amjith from '../assets/amjith.png';
 import flyfox from '../assets/flyfox.jpg';
+import arjun from '../assets/arjun.png';
 
 // team members
 const teamMembers = [
@@ -17,13 +18,13 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/-devan-m/",
   },
   {
-    name: "Nihal",
-    displayName: "Nixl",
-    role: "Animator",
-    bio: "The tech wizard obsessed with fluid controls, and player feel. Nixl makes sure every movement, jump, and bug (the good kind) hits just right.",
-    avatar: nixl,
+    name: "Arjun",
+    displayName: "WhiteWolf",
+    role: "Developer",
+    bio: "The system crafter obsessed with performance and precision. White Wolf makes sure every line of code runs smoothly behind the scenes.",
+    avatar: arjun,
     twitter: "https://twitter.com/",
-    linkedin: "https://www.linkedin.com/in/amnihal/",
+    linkedin: "https://www.linkedin.com/in/arjun-shanker-/",
   },
   {
     name: "Amjith",
@@ -42,6 +43,15 @@ const teamMembers = [
     avatar: flyfox, 
     twitter: "https://twitter.com/",
     linkedin: "https://www.linkedin.com/in/anand-anil-369aa4209/",
+  },
+  {
+    name: "Nihal",
+    displayName: "Nixl",
+    role: "Animator",
+    bio: "The tech wizard obsessed with fluid controls, and player feel. Nixl makes sure every movement, jump, and bug (the good kind) hits just right.",
+    avatar: nixl,
+    twitter: "https://twitter.com/",
+    linkedin: "https://www.linkedin.com/in/amnihal/",
   },
 ];
 
