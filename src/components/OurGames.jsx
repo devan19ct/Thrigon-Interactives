@@ -1,6 +1,8 @@
 import React from 'react';
 
 import moksh from '../assets/mokshlogo.png'; 
+import projects from '../assets/Before.png';
+import projectsHover from '../assets/After.png';
 import YekshiNights from '../assets/Yekshi.png';
 import BicycleLife from '../assets/bycle.png';
 import BicycleLifeHover from '../assets/BycleHover.png';
@@ -9,6 +11,16 @@ import YekshiHover from '../assets/YekshiHover.png';
 
 // Data structure for the game cards
 const gamesData = [
+  {
+    title: "Project - S",
+    description: "Leap across charming landscapes and use playful magic to uncover tiny mysteries...",
+    image: projects,
+    hoverImage: projectsHover,
+    status: "In Development",
+    tags: ["Platformer","Magic", "Casual", "Arcade", "Slice of Life"],
+    statusColor: "bg-red-600", 
+  },
+
   {
     title: "Bicycle Life: Oru Cycle Kadha",
     description: "Race through misty 90s mornings and lively streets as a witty paperboy...",
