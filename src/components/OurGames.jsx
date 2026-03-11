@@ -17,7 +17,7 @@ const gamesData = [
     image: projects,
     hoverImage: projectsHover,
     status: "In Development",
-    tags: ["Platformer","Magic", "Casual", "Arcade", "Slice of Life"],
+    tags: ["Platformer","Sci-fi","Adventure", "Slice of Life"],
     statusColor: "bg-red-600", 
   },
 
