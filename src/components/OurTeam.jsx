@@ -44,15 +44,7 @@ const teamMembers = [
     twitter: "https://twitter.com/",
     linkedin: "https://www.linkedin.com/in/anand-anil-369aa4209/",
   },
-  {
-    name: "Nihal",
-    displayName: "Nixl",
-    role: "Animator",
-    // bio: "The tech wizard obsessed with fluid controls, and player feel. Nixl makes sure every movement, jump, and bug (the good kind) hits just right.",
-    avatar: nixl,
-    twitter: "https://twitter.com/",
-    linkedin: "https://www.linkedin.com/in/amnihal/",
-  },
+
 ];
 
 // card component
