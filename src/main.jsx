@@ -5,8 +5,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className="overflow-x-hidden">
-      <App />
-    </div>
+    <App />
   </StrictMode>,
 )
+
