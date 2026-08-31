@@ -1,7 +1,7 @@
 import React from 'react';
 import { Twitter, Instagram, Youtube, MessageSquare, ArrowUpRight } from 'lucide-react';
 import logoRembg from '../assets/thrigon_interactives-rembg.png';
-import { studioSocials } from '../data/studioData';
+import { studioSocials, studioNavLinks } from '../data/studioData';
 
 export default function Footer({ onOpenModal }) {
   const currentYear = 2026;
@@ -52,14 +52,7 @@ export default function Footer({ onOpenModal }) {
               EXPLORE
             </h4>
             <ul className="space-y-2 text-xs font-mono">
-              {[
-                { name: 'Home', href: '#home' },
-                { name: 'Games', href: '#games' },
-                { name: 'Projects', href: '#projects' },
-                { name: 'Studio', href: '#studio' },
-                { name: 'About', href: '#about' },
-                { name: 'Contact', href: '#contact' },
-              ].map((item) => (
+              {studioNavLinks.map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}

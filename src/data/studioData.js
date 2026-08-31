@@ -16,8 +16,8 @@ export const studioNavLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Games', href: '#games' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Studio', href: '#studio' },
   { name: 'About', href: '#about' },
+  { name: 'Studio', href: '#studio' },
   { name: 'Contact', href: '#contact' },
 ];
 

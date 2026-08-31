@@ -8,7 +8,7 @@ export default function ShowcaseSlider({ onOpenModal }) {
   const [shiftHovered, setShiftHovered] = useState(false);
 
   return (
-    <section id="featured-showcase" className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0a0812] relative overflow-hidden">
+    <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0a0812] relative overflow-hidden">
       {/* Subtle Background Lighting */}
       <div className="absolute top-1/3 right-10 w-[500px] h-[500px] bg-purple-900/15 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-indigo-950/20 rounded-full blur-[130px] pointer-events-none" />

@@ -4,7 +4,7 @@ import { studioSocials } from '../data/studioData';
 
 export default function DuospireEcosystem() {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#050508] border-t border-b border-purple-950/40 relative overflow-hidden">
+    <section id="studio" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#050508] border-t border-b border-purple-950/40 relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10">
         
         <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-950/40 border border-purple-900/30 text-purple-400 text-[11px] font-mono tracking-widest uppercase mb-4">
