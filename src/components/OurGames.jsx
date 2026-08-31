@@ -1,24 +1,24 @@
 import React from 'react';
 
-import moksh from '../assets/mokshlogo.png'; 
-import projects from '../assets/Before.png';
-import projectsHover from '../assets/After.png';
+import moksh from '../assets/mokshlogo.png';
+import projects from '../assets/WM_ShiftBound.png';
+import projectsHover from '../assets/shift.png';
 import YekshiNights from '../assets/Yekshi.png';
 import BicycleLife from '../assets/bycle.png';
 import BicycleLifeHover from '../assets/BycleHover.png';
 import mokshHover from '../assets/mokshenv.png';
-import YekshiHover from '../assets/YekshiHover.png'; 
+import YekshiHover from '../assets/YekshiHover.png';
 
 // Data structure for the game cards
 const gamesData = [
   {
-    title: "Project - S",
+    title: "Shift Bounds",
     description: "Leap across charming landscapes and use playful magic to uncover tiny mysteries...",
     image: projects,
     hoverImage: projectsHover,
     status: "In Development",
-    tags: ["Platformer","Sci-fi","Adventure", "Slice of Life"],
-    statusColor: "bg-red-600", 
+    tags: ["Platformer", "Sci-fi", "Adventure", "Slice of Life"],
+    statusColor: "bg-red-600",
   },
 
   {
@@ -28,7 +28,7 @@ const gamesData = [
     hoverImage: BicycleLifeHover,
     status: "In Development",
     tags: ["Open-World", "Casual", "Arcade", "Slice of Life"],
-    statusColor: "bg-red-600", 
+    statusColor: "bg-red-600",
   },
 
   {
@@ -38,7 +38,7 @@ const gamesData = [
     hoverImage: mokshHover,
     status: "Coming Soon",
     tags: ["Adventure", "Exploration", "Story-Rich", "Survival"],
-    statusColor: "bg-purple-600", 
+    statusColor: "bg-purple-600",
   },
 
   {
@@ -48,7 +48,7 @@ const gamesData = [
     hoverImage: YekshiHover,
     status: "Concept",
     tags: ["Puzzle", "Horror", "Open-World RPG"],
-    statusColor: "bg-pink-600", 
+    statusColor: "bg-pink-600",
   },
 ];
 
@@ -64,9 +64,8 @@ const GameCard = ({ game }) => (
       <img
         src={game.image}
         alt={game.title}
-        className={`w-full h-full object-cover transition-opacity duration-300 ${
-          game.hoverImage ? "group-hover:opacity-0" : ""
-        }`}
+        className={`w-full h-full object-cover transition-opacity duration-300 ${game.hoverImage ? "group-hover:opacity-0" : ""
+          }`}
       />
 
       {/* Hover Image (only if available) */}
@@ -96,8 +95,8 @@ const GameCard = ({ game }) => (
       {/* Tags */}
       <div className="flex flex-wrap gap-2">
         {game.tags.map((tag, index) => (
-          <span 
-            key={index} 
+          <span
+            key={index}
             className="text-xs font-medium text-purple-500 bg-gray-700/50 px-3 py-1 rounded-full border border-purple-500/20"
           >
             {tag}

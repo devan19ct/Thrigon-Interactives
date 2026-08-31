@@ -14,6 +14,7 @@ const teamMembers = [
     role: "Developer",
     // bio: "The brain behind code and chaos. From gameplay logic to level flow, Coffin builds the core systems that keep our worlds alive and occasionally breaks them just to make them better.",
     avatar: coffin,
+    avatarPosition: "center 15%",
     twitter: "https://x.com/_mr_coffin",
     linkedin: "https://www.linkedin.com/in/-devan-m/",
   },
@@ -23,6 +24,7 @@ const teamMembers = [
     role: "Developer",
     // bio: "The system crafter obsessed with performance and precision. White Wolf makes sure every line of code runs smoothly behind the scenes.",
     avatar: arjun,
+    avatarPosition: "center 15%",
     twitter: "https://twitter.com/",
     linkedin: "https://www.linkedin.com/in/arjun-shanker-/",
   },
@@ -32,6 +34,7 @@ const teamMembers = [
     role: "3D Artist",
     // bio: "Turns ideas into tangible worlds. From grungy walls to eerie lighting, Johnny crafts the atmosphere that defines every Thrigon experience.",
     avatar: amjith, 
+    avatarPosition: "center 15%",
     twitter: "https://twitter.com/",
     linkedin: "https://www.linkedin.com/in/amjithkshine/",
   },
@@ -41,6 +44,7 @@ const teamMembers = [
     role: "3D Artist",
     // bio: "Flyfox transforms mood into matter, sculpting the spaces, lights, and tones that define Thrigon’s worlds.",
     avatar: flyfox, 
+    avatarPosition: "center 15%",
     twitter: "https://twitter.com/",
     linkedin: "https://www.linkedin.com/in/anand-anil-369aa4209/",
   },
@@ -52,7 +56,12 @@ const TeamMemberCard = ({ member }) => (
   <div className="group flex flex-col items-center text-center p-6 bg-gray-800/50 rounded-xl shadow-lg transition-all duration-300 hover:shadow-purple-400/20 h-full">
     
     <div className="w-32 h-32 mb-4 rounded-full border-4 border-purple-500/30 overflow-hidden bg-gray-700 flex items-center justify-center">
-      <img src={member.avatar} alt={member.displayName} className="w-full h-full object-cover" />
+      <img 
+        src={member.avatar} 
+        alt={member.displayName} 
+        className="w-full h-full object-cover"
+        style={{ objectPosition: member.avatarPosition || 'center 15%' }} 
+      />
     </div>
 
     {/* Hover name switch */}
